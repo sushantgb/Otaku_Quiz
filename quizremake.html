@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerd Quiz</title>
+    <link rel="stylesheet" href="quizremake.css" type="text/css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- to display the main page -->
+        <div class="index" id="index">
+            <p class="title-head">Nerdy Quiz</p>
+            <p class="tagline-head">Do you think you are an Otaku ? Let's find out !</p>
+            <p class="instruction-head">Enter your name to activate categories and start the quiz.</p>
+            <p class="user-display"></p>
+            <p class="user-message">Let's Begin !</p>
+            <div class="userinputs">
+                <input type="text" class="username" placeholder="Enter your name" style="width: 70%;">
+                <button class="enter" type="submit">Enter</button>
+            </div>
+            <hr>
+            <div class="categories">
+                <p class="category-head">Select a category from below to start the quiz</p>
+                <div class="button-group">
+                    <button class="option-button btn1">Anime</button>
+                    <button class="option-button">Superhero</button>
+                    <button class="option-button">Disney</button>
+                    <button class="option-button btn4">Animated Series</button>
+                </div>
+            </div>
+        </div>
+        <!-- to display quiz -->
+        <div class="quiz" id="quiz">
+            <!-- for category heading -->
+            <p class="category-title">Category Heading</p>
+            <hr>
+            <!-- to display timer and score -->
+            <div class="time-score">
+                <p class="time">Timer : <span></span></p>
+                <p class="score">Score : <span> 00 </span></p>
+            </div>
+            <hr>
+            <!-- to display questions -->
+            <div class="question-box">
+                <p class="quest-num">Question : <span class="questNum"> </span> / <span class="totalQuest"></span></p>
+                <p class="question-display">Question-text</p>
+            </div>
+            <div class="alernatives">
+                <div class="answer-button op1">Option 1</div>
+                <div class="answer-button op2">Option 2</div>
+                <div class="answer-button op3">Option 3</div>
+                <div class="answer-button op4">Option 4</div>
+            </div>
+            <hr>
+            <div class="question-navigation">
+                <button class="next">Next</button>
+                <button class="submit">Submit</button>
+            </div>
+        </div>
+        <!-- to display the results -->
+        <div class="result" id="result">
+            <p class="result-statement"> </p>
+            <p class="player">Sushant</p>
+            <h3>Your Performance Card is below</h3>
+            <div class="result-figures">
+                <p>Score : <span class="final-score"> 10 </span></p>
+                <p>Questions Attempted : <span class="attempted-questions"> 10 </span></p>
+                <p>Total Questions : <span class="total-questions"> 10 </span></p>
+                <p>Correct Answers : <span class="correct-answers"> 10 </span></p>
+                <p>Wrong Answers : <span class="incorrect-answers"> 10 </span></p>
+            </div>
+            <div class="result-navigation">
+                <button class="home">Return to Home</button>
+            </div>
+        </div>
+    </div>
+    <script src="quizremake.js" type="text/javascript"></script>
+</body>
+
+</html>

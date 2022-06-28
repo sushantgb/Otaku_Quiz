@@ -1,0 +1,228 @@
+{
+    "quiz":[
+        {
+            "cat": "Anime",
+            "quizList": [
+                {
+                    "question": "What do you have to do with Pokemon?",
+                    "options": [
+                        "Snatch 'em all!",
+                        "Fetch 'em all!",
+                        "Catch 'em all!",
+                        "Match 'em all!"
+                    ],
+                    "answer": "Catch 'em all!"
+                },
+                {
+                    "question": "What is the name of Code Geass protagonist?",
+                    "options": [
+                        "Cornelia Li Britannia",
+                        "Suzaku Kururugi",
+                        "Nunnally Lamperouge",
+                        "Lelouch Vi Britannia"
+                    ],
+                    "answer": "Lelouch Vi Britannia"
+                },
+                {
+                    "question": "What was the name of Takao Kinomiya (Tyson Granger?'s Bayblade Bit-Beast name?",
+                    "options": [
+                        "Dragoon",
+                        "Dranzer",
+                        "Driger",
+                        "Galman"
+                    ],
+                    "answer": "Dragoon"
+                },
+                {
+                    "question": "Which of the following is not an Eevee pokemon evolution?",
+                    "options": [
+                        "Jolteon",
+                        "Flareon",
+                        "Espeon",
+                        "Empoleon"
+                    ],
+                    "answer": "Empoleon"
+                },
+                {
+                    "question": "Which guild Juvia Lockster belong before joining the Fairy Tail Guild?",
+                    "options": [
+                        "Phantom Lord",
+                        "Lamia Scale",
+                        "Twilight Ogre",
+                        "Sabertooth"
+                    ],
+                    "answer": "Phantom Lord"
+                }
+                
+            ]
+        },
+        {
+            "cat": "Superhero",
+            "quizList": [
+                {
+                    "question": "In the comics, who created Captain America's shield?",
+                    "options": [
+                        "Howard Stark",
+                        "Myron MacLain",
+                        "Tony Stark",
+                        "George Lucas"
+                    ],
+                    "answer": "Myron MacLain"
+                },
+                {
+                    "question": "How many version of the Iron man armor had Tony Stark made?",
+                    "options": [
+                        "3",
+                        "10",
+                        "7",
+                        "50"
+                    ],
+                    "answer": "50"
+                },
+                {
+                    "question": "Where did DC's Joker spend most of his time?",
+                    "options": [
+                        "Red Hood",
+                        "Arkham Asylum",
+                        "Prime Earth",
+                        "Alternate Timelines"
+                    ],
+                    "answer": "Arkham Asylum"
+                },
+                {
+                    "question": "Which of the following is not a member of DC's 'Birds of prey'?",
+                    "options": [
+                        "Batgirl",
+                        "Wonder Woman",
+                        "Black Canary",
+                        "Huntress"
+                    ],
+                    "answer":  "Wonder Woman"
+                },
+                {
+                    "question": "Which of the following is the place of origin of Wonder Woman?",
+                    "options": [
+                        "Abyssia",
+                        "Umec",
+                        "Atlantis",
+                        "Themyscira"
+                    ],
+                    "answer": "Themyscira"
+                }
+                
+            ]
+        },
+        {
+            "cat": "Disney",
+            "quizList": [
+                {
+                    "question": "Which Disney film includes the hit song 'Let it Go?'",
+                    "options": [
+                        "Cars",
+                        "Rapunzel",
+                        "Aladdin",
+                        "Frozen"
+                    ],
+                    "answer": "Frozen"
+                },
+                {
+                    "question": "What poisonous fruit did Snow White eat?",
+                    "options": [
+                        "Blueberry",
+                        "Apple",
+                        "Peach",
+                        "Orange"
+                    ],
+                    "answer": "Apple"
+                },
+                {
+                    "question": "Which Disney Princess sings 'Once Upon a Dream'?",
+                    "options": [
+                        "Snow White",
+                        "Aurora",
+                        "Jasmine",
+                        "Ariel"
+                    ],
+                    "answer": "Aurora"
+                },
+                {
+                    "question": "What is the city-name in Ducktales?",
+                    "options": [
+                        "Duckworld",
+                        "Duckburg",
+                        "Duckearl",
+                        "Duckport"
+                    ],
+                    "answer":  "Duckburg"
+                },
+                {
+                    "question": "What's the name of Goofy's son?",
+                    "options": [
+                        "Mark Million Goof",
+                        "Gaffy Goof",
+                        "Geefy Goof",
+                        "Maxmillion 'Max' Goof"
+                    ],
+                    "answer": "Maxmillion 'Max' Goof"
+                }
+                
+            ]
+        },
+        {
+            "cat": "Animated Series",
+            "quizList": [
+                {
+                    "question": "What type of bird can Wile E. Coyote Never Catch?",
+                    "options": [
+                        "An Emu",
+                        "An Ostrich",
+                        "A Kiwi",
+                        "A Roadrunner"
+                    ],
+                    "answer": "A Roadrunner"
+                },
+                {
+                    "question": "What sort of animal is Pepe le Pew in Looney Tunes?",
+                    "options": [
+                        "Skunk",
+                        "Racoon",
+                        "Cat",
+                        "Mongoose"
+                    ],
+                    "answer": "Skunk"
+                },
+                {
+                    "question": "Which of the following was not a Hanna-Barbera cartoon?",
+                    "options": [
+                        "Quick Draw McGraw",
+                        "Speed Racer",
+                        "Scooby-Doo",
+                        "Jonny Quest"
+                    ],
+                    "answer": "Speed Racer"
+                },
+                {
+                    "question": "What is the name of the Flintstones' pet dinosaur?",
+                    "options": [
+                        "Dingo",
+                        "Dino",
+                        "Dinamo",
+                        "Domino"
+                    ],
+                    "answer":  "Dino"
+                },
+                {
+                    "question": "which of the following is the power of Ghostfreak from Ben 10?",
+                    "options": [
+                        "Possession",
+                        "Invisibility",
+                        "Body Alteration",
+                        "All of the above"
+                    ],
+                    "answer": "All of the above"
+                }
+                
+            ]
+        }
+    ]
+}

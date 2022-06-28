@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --backgroun-col:linear-gradient(rgb(242, 158, 147),rgb(248, 244, 164));
+    --hover-col: #fbf9bd;
+    --disabled-col: #EDF7DF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    margin: auto;
+}
+/* withing index div */
+.index{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 0.5em;
+    margin: auto;
+    background-image: var(--backgroun-col);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:40em;
+    border-radius: 0.2em;
+    width: 35em;
+    animation: divappearance 0.8s ease-in;
+}
+.title-head{
+    font-size: xx-large;
+    font-weight:200;
+}
+.tagline-head{
+    font-size: large;
+    text-shadow: 1px 2px 10px rgb(104, 100, 100);
+}
+.instruction-head{
+    font-weight: lighter;
+}
+/* to display user name */
+.user-display{
+    font-size: large;
+    font-weight:600;
+    color: black;
+    text-transform: uppercase;
+    padding: 0.1em 0.8em 0.1em 0.8em;
+}
+/* to display message for user */
+.user-message{
+    display: none;
+    font-size: normal;
+    margin-bottom: 0;
+}
+/* inside userinput fields div */
+.userinputs{
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    width: 100%;
+}
+/* text field and enter button */
+.username, .enter{
+    padding: 0.8em;
+    font-size: 1em;
+    border: solid;
+    border-style: none;
+    border-radius: 0.15em;
+    outline-color: var(--hover-col);
+}
+.enter{
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+.enter:hover{
+    cursor: pointer;
+    background-color: var(--hover-col);
+}
+hr{
+    width: 100%;
+    margin-top: 1em;
+    border: solid black;
+    border-width: thin;
+}
+/* category div */
+.categories{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+/* category div heading instruction */
+.category-head{
+    font-size: large;
+}
+/* category buttons */
+.button-group{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.2em;
+    padding: 0;
+}
+.option-button{
+    padding: 1.5em;
+    border: solid;
+    border-style: none;
+    cursor: pointer;
+    background:none;
+    background-color: white;
+    transition: 0.8s;
+}
+/* extra class for border on side buttons */
+.btn1{
+    border-radius: 0.2em 0em 0em 0.2em;
+}
+.btn4{
+    border-radius: 0em 0.2em 0.2em 0em;
+}
+/* hover effect on buttons */
+.option-button:hover{
+    cursor: pointer;
+    background-color: var(--hover-col);
+}
+.option-button:disabled{
+    background-color: var(--disabled-col);
+}
+
+/* --- quiz page settings -- */
+.quiz{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 0.5em;
+    margin: auto;
+    background-image: var(--backgroun-col);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:40em;
+    border-radius: 0.2em;
+    width: 35em;
+    animation: divappearance 0.8s;
+}
+.category-title{
+    font-size: x-large;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* for time and score display */
+.time-score{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0em 1.5em;
+    font-weight: bold;
+}
+.time span, 
+.score span{
+    font-size: large;
+    font-weight: lighter;
+}
+/* for question display */
+.question-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+/* to display question number */
+.quest-num{
+    display: flex;
+    gap: 0.2em;
+}
+/* to display question text */
+.question-display{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: solid white;
+    border-width: thin;
+    font-size: x-large;
+    height: 6em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    animation: questionappearance 2s infinite;
+}
+/* to display question options */
+.alernatives{
+    display: grid;
+    grid-template-columns: 15em 15em;
+    width: 100%;
+    gap: 1em;
+}
+.answer-button{
+    padding: 1em;
+    border: solid;
+    border-style: none;
+    cursor: pointer;
+    background:none;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 0.2em;
+    font-weight: bold;
+}
+.answer-button:hover{
+    background-color: var(--hover-col);
+}
+.question-navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+}
+.next,
+.submit{
+    padding: 0.6em;
+    width: 10em;
+    text-transform: uppercase;
+    border: solid;
+    border-style: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 0.2em;
+    transition: 0.5s;
+}
+.next:hover,
+.submit:hover{
+    background-color: var(--hover-col);
+}
+
+/* for result div */
+.result{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 0.5em;
+    margin: auto;
+    background-image: var(--backgroun-col);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:40em;
+    border-radius: 0.2em;
+    width: 35em;
+    animation: divappearance 0.8s;
+}
+.result-statement{
+    font-size: xx-large;
+    font-variant: small-caps;
+}
+.result-statement span{
+    font-size: 2em;
+}
+.player{
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5em;
+    text-shadow: 1px 2px 10px rgb(255, 255, 0);
+}
+.result h3{
+    text-transform: capitalize;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+.result-figures{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-items: flex-start;
+    align-items: flex-start;
+    border: solid aliceblue;
+    border-width: thin;
+    width: 80%;
+    padding: 1em;
+    opacity: 0.8;
+    border-radius: 0.5em;
+    font-weight: bold;
+}
+.result-figures span{
+    color: rgb(255, 255, 255);
+}
+
+.result-navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+}
+.home{
+    padding: 1em;
+    width: 15em;
+    text-transform: uppercase;
+    border: solid;
+    border-style: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 0.2em;
+    transition: 0.5s;
+}
+.home:hover{
+    background-color: var(--hover-col);
+}
+
+/* animation */
+
+@keyframes divappearance{
+    from{top: 10px;}
+    to{top:0px;}
+}
+@keyframes questionappearance{
+    50%{
+        transform: scale(0.98,0.98);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
