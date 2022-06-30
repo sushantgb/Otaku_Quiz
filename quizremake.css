@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-:root{
-    --backgroun-col:linear-gradient(rgb(242, 158, 147),rgb(248, 244, 164));
+:root {
+    --backgroun-col: linear-gradient(rgb(242, 158, 147), rgb(248, 244, 164));
     --hover-col: #fbf9bd;
     --disabled-col: #EDF7DF;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     padding: 2em;
     margin: auto;
 }
+
 /* withing index div */
-.index{
+.index {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -29,38 +32,44 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height:40em;
+    height: 40em;
     border-radius: 0.2em;
     width: 35em;
     animation: divappearance 0.8s ease-in;
 }
-.title-head{
+
+.title-head {
     font-size: xx-large;
-    font-weight:200;
+    font-weight: 200;
 }
-.tagline-head{
+
+.tagline-head {
     font-size: large;
     text-shadow: 1px 2px 10px rgb(104, 100, 100);
 }
-.instruction-head{
+
+.instruction-head {
     font-weight: lighter;
 }
+
 /* to display user name */
-.user-display{
+.user-display {
     font-size: large;
-    font-weight:600;
+    font-weight: 600;
     color: black;
     text-transform: uppercase;
     padding: 0.1em 0.8em 0.1em 0.8em;
 }
+
 /* to display message for user */
-.user-message{
+.user-message {
     display: none;
     font-size: normal;
     margin-bottom: 0;
 }
+
 /* inside userinput fields div */
-.userinputs{
+.userinputs {
     display: flex;
     margin-top: 1em;
     justify-content: center;
@@ -68,8 +77,10 @@
     gap: 0.5em;
     width: 100%;
 }
+
 /* text field and enter button */
-.username, .enter{
+.username,
+.enter {
     padding: 0.8em;
     font-size: 1em;
     border: solid;
@@ -77,67 +88,78 @@
     border-radius: 0.15em;
     outline-color: var(--hover-col);
 }
-.enter{
+
+.enter {
     background-color: white;
     transition: 0.5s ease-in-out;
 }
-.enter:hover{
+
+.enter:hover {
     cursor: pointer;
     background-color: var(--hover-col);
 }
-hr{
+
+hr {
     width: 100%;
     margin-top: 1em;
     border: solid black;
     border-width: thin;
 }
+
 /* category div */
-.categories{
+.categories {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
+
 /* category div heading instruction */
-.category-head{
+.category-head {
     font-size: large;
 }
+
 /* category buttons */
-.button-group{
-    display:flex;
+.button-group {
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 0.2em;
     padding: 0;
 }
-.option-button{
+
+.option-button {
     padding: 1.5em;
     border: solid;
     border-style: none;
     cursor: pointer;
-    background:none;
+    background: none;
     background-color: white;
     transition: 0.8s;
 }
+
 /* extra class for border on side buttons */
-.btn1{
+.btn1 {
     border-radius: 0.2em 0em 0em 0.2em;
 }
-.btn4{
+
+.btn4 {
     border-radius: 0em 0.2em 0.2em 0em;
 }
+
 /* hover effect on buttons */
-.option-button:hover{
+.option-button:hover {
     cursor: pointer;
     background-color: var(--hover-col);
 }
-.option-button:disabled{
+
+.option-button:disabled {
     background-color: var(--disabled-col);
 }
 
 /* --- quiz page settings -- */
-.quiz{
+.quiz {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -148,31 +170,35 @@ hr{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height:40em;
+    height: 40em;
     border-radius: 0.2em;
     width: 35em;
     animation: divappearance 0.8s;
 }
-.category-title{
+
+.category-title {
     font-size: x-large;
     text-transform: uppercase;
     font-weight: bold;
 }
+
 /* for time and score display */
-.time-score{
+.time-score {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 0em 1.5em;
     font-weight: bold;
 }
-.time span, 
-.score span{
+
+.time span,
+.score span {
     font-size: large;
     font-weight: lighter;
 }
+
 /* for question display */
-.question-box{
+.question-box {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -182,13 +208,15 @@ hr{
     text-align: center;
     font-weight: bold;
 }
+
 /* to display question number */
-.quest-num{
+.quest-num {
     display: flex;
     gap: 0.2em;
 }
+
 /* to display question text */
-.question-display{
+.question-display {
     position: relative;
     display: flex;
     justify-content: center;
@@ -202,36 +230,41 @@ hr{
     border-radius: 0.2em;
     animation: questionappearance 2s infinite;
 }
+
 /* to display question options */
-.alernatives{
+.alernatives {
     display: grid;
     grid-template-columns: 15em 15em;
     width: 100%;
     gap: 1em;
 }
-.answer-button{
+
+.answer-button {
     padding: 1em;
     border: solid;
     border-style: none;
     cursor: pointer;
-    background:none;
+    background: none;
     background-color: white;
     transition: 0.5s;
     border-radius: 0.2em;
     font-weight: bold;
 }
-.answer-button:hover{
+
+.answer-button:hover {
     background-color: var(--hover-col);
 }
-.question-navigation{
+
+.question-navigation {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
     gap: 1em;
 }
+
 .next,
-.submit{
+.submit {
     padding: 0.6em;
     width: 10em;
     text-transform: uppercase;
@@ -242,13 +275,14 @@ hr{
     border-radius: 0.2em;
     transition: 0.5s;
 }
+
 .next:hover,
-.submit:hover{
+.submit:hover {
     background-color: var(--hover-col);
 }
 
 /* for result div */
-.result{
+.result {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -259,32 +293,37 @@ hr{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height:40em;
+    height: 40em;
     border-radius: 0.2em;
     width: 35em;
     animation: divappearance 0.8s;
 }
-.result-statement{
+
+.result-statement {
     font-size: xx-large;
     font-variant: small-caps;
 }
-.result-statement span{
+
+.result-statement span {
     font-size: 2em;
 }
-.player{
+
+.player {
     font-size: x-large;
     font-weight: bold;
     text-transform: uppercase;
     padding: 0.5em;
     text-shadow: 1px 2px 10px rgb(255, 255, 0);
 }
-.result h3{
+
+.result h3 {
     text-transform: capitalize;
     background-color: white;
     padding: 0.5em;
     border-radius: 0.2em;
 }
-.result-figures{
+
+.result-figures {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -298,11 +337,12 @@ hr{
     border-radius: 0.5em;
     font-weight: bold;
 }
-.result-figures span{
+
+.result-figures span {
     color: rgb(255, 255, 255);
 }
 
-.result-navigation{
+.result-navigation {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -310,7 +350,8 @@ hr{
     width: 100%;
     gap: 1em;
 }
-.home{
+
+.home {
     padding: 1em;
     width: 15em;
     text-transform: uppercase;
@@ -321,21 +362,366 @@ hr{
     border-radius: 0.2em;
     transition: 0.5s;
 }
-.home:hover{
+
+.home:hover {
     background-color: var(--hover-col);
 }
 
 /* animation */
 
-@keyframes divappearance{
-    from{top: 10px;}
-    to{top:0px;}
-}
-@keyframes questionappearance{
-    50%{
-        transform: scale(0.98,0.98);
+@keyframes divappearance {
+    from {
+        top: 10px;
     }
-    100%{
+
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes questionappearance {
+    50% {
+        transform: scale(0.98, 0.98);
+    }
+
+    100% {
         transform: scale(1, 1);
+    }
+}
+
+@media screen and (max-width:280px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+        margin: auto;
+        font-size: 0.8em;
+    }
+
+    .index {
+        padding: 3em;
+        gap: 0.2em;
+        margin: auto;
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .option-button {
+        font-size: 0.9em;
+    }
+
+    .user-display {
+        font-size: 1.2em;
+    }
+
+    .quiz {
+        font-size: 1.1em;
+    }
+
+    .category-title {
+        font-size: 1.5em;
+    }
+
+    .time-score {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0em 0.2em;
+        gap: 0.8em;
+        font-weight: bold;
+    }
+
+    .time span,
+    .score span {
+        font-size: 1em;
+        font-weight: lighter;
+    }
+
+    .alernatives {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5em;
+        margin-top: 1em;
+    }
+
+    .question-display {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:719px) {
+    .index {
+        padding: 3em;
+        gap: 0.2em;
+        margin: auto;
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+        margin: auto;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 0.2em;
+        padding: 0;
+    }
+
+    .option-button {
+        padding: 1.2em;
+        width: 10em;
+    }
+
+    .btn1 {
+        border-radius: 0.2em 0.2em 0em 0em;
+    }
+
+    .btn4 {
+        border-radius: 0em 0em 0.2em 0.2em;
+    }
+
+    /* hover effect on buttons */
+    .option-button:hover {
+        cursor: pointer;
+        background-color: var(--hover-col);
+    }
+
+    .userinputs {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    .title-head {
+        padding: 0.5em;
+    }
+
+    .tagline-head {
+        font-size: 1em;
+        text-shadow: 1px 2px 10px rgb(104, 100, 100);
+    }
+
+    .instruction-head {
+        font-weight: lighter;
+        font-size: 1em;
+    }
+
+    .quiz {
+        padding: 3em;
+        gap: 0.2em;
+        margin: auto;
+        height: 90vh;
+        width: 90vw;
+    }
+
+    .category-head {
+        font-size: 1em;
+    }
+
+    .user-display {
+        font-size: 1.2em;
+    }
+
+    .quiz {
+        font-size: 0.8em;
+    }
+
+    .time-score {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0em 0.2em;
+        gap: 0.8em;
+        font-weight: bold;
+    }
+
+    .alernatives {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5em;
+        margin-top: 1em;
+    }
+
+    .result {
+        font-size: 0.9em;
+        padding: 2em;
+        gap: 0.8em;
+        margin: auto;
+        margin-top: 1em;
+        height: 90vh;
+        width: 90vw;
+    }
+
+    .result-statement {
+        font-size: 1.5em;
+    }
+
+    .player {
+        font-size: 1em;
+    }
+
+    .result-figures {
+        font-size: 1em;
+    }
+
+    .result-navigation button {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width:719px) and (max-width:1000px) {
+    .index {
+        padding: 3em;
+        gap: 0.2em;
+        margin: auto;
+        height: 90vh;
+        width: 90vw;
+        font-size: 2em;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+        margin: auto;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 0.2em;
+        padding: 0;
+    }
+
+    .option-button {
+        padding: 1.2em;
+        width: 15em;
+        font-size: 0.9em;
+    }
+
+    .btn1 {
+        border-radius: 0.2em 0.2em 0em 0em;
+    }
+
+    .btn4 {
+        border-radius: 0em 0em 0.2em 0.2em;
+    }
+
+    /* hover effect on buttons */
+    .option-button:hover {
+        cursor: pointer;
+        background-color: var(--hover-col);
+    }
+
+    .userinputs {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    .title-head {
+        padding: 0.5em;
+        font-size: 2em;
+    }
+
+    .tagline-head {
+        font-size: 1em;
+        text-shadow: 1px 2px 10px rgb(104, 100, 100);
+    }
+
+    .instruction-head {
+        font-weight: lighter;
+        font-size: 1em;
+    }
+
+    .quiz {
+        padding: 3em;
+        gap: 0.2em;
+        margin: auto;
+        height: 90vh;
+        width: 90vw;
+    }
+
+    .category-head {
+        font-size: 1em;
+    }
+
+    .user-display {
+        font-size: 1.2em;
+    }
+
+    .quiz {
+        font-size: 1.5em;
+    }
+
+    .category-title {
+        font-size: 1.5em;
+    }
+
+    .time-score {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0em 0.2em;
+        gap: 0.8em;
+        font-weight: bold;
+    }
+
+    .time span,
+    .score span {
+        font-size: 1em;
+        font-weight: lighter;
+    }
+
+    .alernatives {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5em;
+        margin-top: 1em;
+    }
+
+    .question-display {
+        font-size: 1.2em;
+    }
+
+    .result {
+        font-size: 0.9em;
+        padding: 2em;
+        gap: 0.9em;
+        margin: auto;
+        margin-top: 1em;
+        height: 90vh;
+        width: 90vw;
+    }
+
+    .result-statement {
+        font-size: 3em;
+    }
+
+    .player {
+        font-size: 2.2em;
+    }
+
+    .result-figures {
+        font-size: 2em;
+    }
+
+    .result-navigation button {
+        font-size: 1.5em;
     }
 }
